@@ -1,0 +1,8 @@
+docs/
+tests/
+textures/
+shaders/
+*.txt
+*.ttf
+COPYING*
+*.json

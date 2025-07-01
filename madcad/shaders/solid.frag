@@ -26,11 +26,11 @@ vec2 skybox(vec3 tosky) {
 	vec2 sky_coord; // texture coordinates of the sky point viewed
 	// selection of the face to use (so texture sector)
 	if      (tosky.z>=  as.x && tosky.z>=  as.y)	sky_coord = vec2( tosky.y/as.z,   tosky.x/as.z)*0.15 + vec2(0.5, 0.4); // top
-	else if (tosky.y>=  as.x && tosky.y>=  as.z)	sky_coord = vec2(-tosky.z/as.y,   tosky.x/as.y)*0.15 + vec2(0.8, 0.4);   // front
-	else if (tosky.x>=  as.y && tosky.x>=  as.z)	sky_coord = vec2( tosky.z/as.x,   tosky.y/as.x)*0.15 + vec2(0.8, 0.8);   // left
+	else if (tosky.y>=  as.x && tosky.y>=  as.z)	sky_coord = vec2(-tosky.z/as.y,   tosky.x/as.y)*0.15 + vec2(0.8, 0.4); // front
+	else if (tosky.x>=  as.y && tosky.x>=  as.z)	sky_coord = vec2( tosky.z/as.x,   tosky.y/as.x)*0.15 + vec2(0.8, 0.8); // left
 	else if (tosky.z<= -as.x && tosky.z<= -as.y)	sky_coord = vec2( tosky.x/as.z,   tosky.y/as.z)*0.15 + vec2(0.5, 0.8); // bottom
 	else if (tosky.y<= -as.x && tosky.y<= -as.z)	sky_coord = vec2( tosky.z/as.y,   tosky.x/as.y)*0.15 + vec2(0.2, 0.4); // back
-	else                                            sky_coord = vec2(-tosky.z/as.x,   tosky.y/as.x)*0.15 + vec2(0.2, 0.8);   // right
+	else                                          sky_coord = vec2(-tosky.z/as.x,   tosky.y/as.x)*0.15 + vec2(0.2, 0.8); // right
 	
 	return sky_coord;
 }

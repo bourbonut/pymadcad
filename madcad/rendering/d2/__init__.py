@@ -1,13 +1,12 @@
 # This file is part of pymadcad,  distributed under license LGPL v3
-'''
-	implementation of views and displays for 3D
-'''
+"""
+implementation of views and displays for 3D
+"""
 
 import moderngl as mgl
 
 from ...mathutils import uvec2, fvec2, fvec3, fmat2, fmat3, Box
 from ..base import Scene
-
 
 
 # class View:
@@ -25,18 +24,18 @@ from ..base import Scene
 #     view: fmat3
 #     ''' current view matrix, this will be the default for next rendering '''
 #     def render(size=None, view=None)
-# 
+#
 # class Offscreen(View):
 #     color: ndarray
 #     depth: ndarray|None
 #     ident: ndarray|None
 #     def render(size=None, view=None)
-# 
+#
 # class QView(QWidget, View):
 #     navigation: Pan|None
 #     toolbar: QWidget|None
 #     def control(key, event)
-# 
+#
 # class Pan:
 #     position: vec2
 #     scale: float
@@ -53,7 +52,7 @@ from ..base import Scene
 #     world: mat3
 #     size: vec2
 #     limits: convex
-# 
+#
 # class Frame(Display):
 #     ''' rectangular frame carying few drawing specifications '''
-# 
+#
